@@ -13,3 +13,6 @@ SPIDER_MODULES = ['govuk_spider.spiders']
 NEWSPIDER_MODULE = 'govuk_spider.spiders'
 USER_AGENT = '%s/%s' % (BOT_NAME, BOT_VERSION)
 
+ITEM_PIPELINES = [
+    'govuk_spider.pipelines.DuplicatesPipeline',
+]
