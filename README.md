@@ -29,4 +29,4 @@ And then run a specific spider with:
 
 A (local) JSON output can be created using the following options:
 
-    scrapy crawl gov.uk -o items.json -t json
+    scrapy crawl gov.uk -o items.json -t jsonlines
