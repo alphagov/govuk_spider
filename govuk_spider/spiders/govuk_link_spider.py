@@ -57,7 +57,7 @@ class GovUKLinkSpider(CrawlSpider):
         of the count so that we know which pages have missing related links.
         """
         html = HtmlXPathSelector(response)
-        related_links = html.select("//*/nav[@role='navigation']/ul/li").extract()
+        related_links = html.select("//div[@class='related']/*/nav[@role='navigation']/ul/li").extract()
         if len(related_links) > 0:
             return GovUKItem(url=response.url,
                              status=response.status,
