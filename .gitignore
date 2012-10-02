@@ -2,3 +2,6 @@
 
 # Installer logs
 pip-log.txt
+
+# Generated artefacts
+build/
