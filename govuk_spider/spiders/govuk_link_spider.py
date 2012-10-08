@@ -20,7 +20,7 @@ def fetch_sitemap():
 
 class GovUKLinkSpider(CrawlSpider):
     name = "gov.uk"
-    start_urls = ["https://www.gov.uk", "https://www.gov.uk/specialist"]
+    start_urls = fetch_sitemap()
     rules = [
         Rule(SgmlLinkExtractor(allow=[r"businesslink\.gov\.uk/*"]),
              follow=False,
