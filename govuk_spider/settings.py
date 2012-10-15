@@ -17,5 +17,5 @@ ITEM_PIPELINES = [
     'govuk_spider.pipelines.DuplicatesPipeline',
 ]
 
-DOWNLOAD_DELAY = 1.0 # 1000ms delay
-CONCURRENT_REQUESTS_PER_DOMAIN = 4
+DOWNLOAD_DELAY = 0.5 # 500ms delay
+CONCURRENT_REQUESTS_PER_DOMAIN = 6
