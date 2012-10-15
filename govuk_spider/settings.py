@@ -16,3 +16,5 @@ USER_AGENT = '%s/%s' % (BOT_NAME, BOT_VERSION)
 ITEM_PIPELINES = [
     'govuk_spider.pipelines.DuplicatesPipeline',
 ]
+
+DOWNLOAD_DELAY = 1.0 # 1000ms delay
