@@ -29,7 +29,9 @@ class GovUKLinkSpider(CrawlSpider):
              follow=False,
              callback="link_callback"),
         Rule(SgmlLinkExtractor(allow=[r"www.gov.uk/*"],
-                               deny=[r"www.gov.uk/licence-finder/*"]),
+                               deny=[r"www.gov.uk/business-finance-support-finder/*",
+                                     r"www.gov.uk/licence-finder/*",
+                                     r"www.gov.uk/trade-tariff/*"]),
              follow=True,
              callback="govuk_link_callback"),
 
