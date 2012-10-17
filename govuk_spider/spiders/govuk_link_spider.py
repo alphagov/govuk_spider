@@ -12,7 +12,7 @@ def fetch_sitemap():
     response = urlopen(url).read()
     root = ElementTree.fromstring(response)
 
-    urls = ["https://www.gov.uk", "https://www.gov.uk/specialist"]
+    urls = ["https://www.gov.uk"]
     for url in root:
         for loc in url:
             urls.append(loc.text)
